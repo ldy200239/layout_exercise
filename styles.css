@@ -1,0 +1,54 @@
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 60rem) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
+/* change the font */
+body {
+    font-family: 'Lobster', cursive;
+}
+
+/* Add space between the elements you have built. */
+header, section {
+    margin-bottom: 20px;
+}
+
+/* Add a different hover and focus state styling to the navigation links. */
+nav a:hover, nav a:focus {
+    color: #5050ff;
+    background-color: #ff5722;
+    text-decoration: underline;
+}
+
+/* Add a different hover and focus state styling to the in-text link */
+#an_introduction a:hover, #an_introduction a:focus {
+    color: #5050ff;
+    text-decoration: underline;
+}
+
+/* Add a different hover and focus state styling to the image inside a link. */
+a img:hover, a img:focus {
+    opacity: 0.8;
+    transform: scale(1.5);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Shorten the default width of the <p> element and ensure it is still responsive when the viewport shrinks. */
+p {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
